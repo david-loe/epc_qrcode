@@ -59,10 +59,9 @@ app_license = "mit"
 # ----------
 
 # add methods and filters to jinja environment
-# jinja = {
-# 	"methods": "epc_qrcode.utils.jinja_methods",
-# 	"filters": "epc_qrcode.utils.jinja_filters"
-# }
+jinja = {
+	"methods": "epc_qrcode.gen_epcqrcode"
+}
 
 # Installation
 # ------------
