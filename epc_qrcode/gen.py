@@ -1,6 +1,7 @@
-# from segno import helpers
+from segno import helpers
+import frappe
 
-# @frappe.whitelist()
-# def gen_epcqrcode(**kwargs):
-#     qrcode = helpers.make_epc_qr(kwargs)
-#     return qrcode.png_data_uri()
+@frappe.whitelist()
+def gen_epcqrcode(**kwargs):
+    qrcode = helpers.make_epc_qr(kwargs)
+    return qrcode.png_data_uri()
