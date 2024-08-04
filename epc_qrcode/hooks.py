@@ -59,9 +59,7 @@ app_license = "mit"
 # ----------
 
 # add methods and filters to jinja environment
-jinja = {
-	"methods": "gen_epc_qrcode:epc_qrcode.gen.gen_epcqrcode"
-}
+jinja = {"methods": ["epc_qrcode:epc_qrcode.gen.gen_epcqrcode"]}
 
 # Installation
 # ------------
@@ -225,4 +223,3 @@ jinja = {
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
